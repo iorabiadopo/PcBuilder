@@ -1,0 +1,201 @@
+body {
+    /*background: linear-gradient(0deg, rgba(225,227,255,1) 0%, rgba(252,227,255,1) 100%);*/
+    background: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+.half-cut {
+    background: linear-gradient(135deg, #7953ff 0%,#7953ff 45%,#10151900 35%,#10151900 75%);
+    width: 100%;
+    height: 100%;
+}
+
+.cPointer {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    max-width: 300px;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+.lCa, .lR, .lG, .lM, .lH{
+    margin-left: 0px;
+    transition: 3s;
+}
+
+.lCa:hover, .lR:hover,  .lM:hover, .lH:hover{
+    margin-left: -150px;
+}
+
+.lM:hover, .lG:hover{
+    margin-left: -80px;
+}
+
+.mostraInfo {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: 1;
+    display: none;
+}
+
+.menu-item {
+    background: rgba(255, 255, 255, 0);
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+}
+
+.menu-item-added {
+    background: linear-gradient(135deg, #21ff46 0%,#21ff46 65%,#10151900 45%,#10151900 75%);
+    font-size: 23px;
+    color: black;
+}
+
+.menu-item-error {
+    background: linear-gradient(135deg, #970000 0%,#970000 65%,#10151900 45%,#10151900 75%);
+    font-size: 27px;
+    color: white;
+}
+
+.nome-item-2 {
+    font-size: 22px;
+}
+
+.nome-item {
+    font-size: 22px;
+    border-style: solid;
+    border-width: 0px 0px 0px 2px;
+    border-color: #272727;
+}
+
+.menuh {
+    background-color: rgba(199, 199, 199, 0);
+    transition: 0.2s;
+}
+
+.menuh:hover {
+    background-color: #bdbdbd80;
+}
+
+.dropdown-menu {
+    cursor: pointer;
+}
+
+.hints {
+    color: rgb(5, 170, 5);
+}
+
+.danger {
+    color: rgb(255, 123, 0);
+}
+
+.error {
+    color: red;
+}
+
+.front-header {
+    width: 100%;
+    height: 700px;
+    overflow-y: hidden;
+    background: url(http://getwallpapers.com/wallpaper/full/7/f/a/1113279-vertical-cool-space-background-wallpapers-1920x1080.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: -56px;
+}
+
+.second-header {
+    width: 100%;
+    height: 400px;
+    overflow-y: hidden;
+    background: url(https://icdn2.digitaltrends.com/image/digitaltrends/razer-hunstman-elite-gaming-keyboard.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cl-white {
+    color: rgb(255, 255, 255);
+}
+
+.main-laptop {
+    margin-top: -80px;
+    margin-left: -120px;
+}
+
+.main-text {
+    position: absolute;
+    top: 81%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    text-align: center;
+    font-size: 80px;
+    color:white;
+    font-weight: 300;
+}
+
+.main-text-2 {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    text-align: center;
+    font-size: 60px;
+    color:white;
+    font-weight: 300;
+}
+
+@keyframes cc {
+    0% {transform: translateY(250px);}
+    100% {transform: translateY(0px);}
+}
+
+.foot-total {
+    height: 46.5px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: none;
+    animation: cc 0.5s ease 0s 1;
+}
+
+.mw-50d {
+    max-width: 1500px;
+}
+
+.box {
+    max-width: 750px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    overflow: hidden;
+    z-index: 4;
+    transition: 0.3s;
+    /*border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    border-color: rgb(212, 212, 212);*/
+}
+
+
+
+.heading-assemble {
+    font-size: 25px;
+}
+
+.imgbox {
+    margin-top: 50px;
+    margin-right: -120px;
+}
+
+
+.imgbox2 {
+    margin-top: 50px;
+    left: 0;
+    pointer-events:none;
+}

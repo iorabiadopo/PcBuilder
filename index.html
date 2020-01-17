@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/91428dbabf.js" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+
+    <title></title>
+</head>
+
+<body data-spy="scroll">
+    <nav class="navbar navbar-light bg-transparent">
+        <a class="navbar-brand" href="#">
+            <img src="http://s3-us-west-2.amazonaws.com/sportshub2-uploads-prod/files/sites/2142/2018/07/31200428/iccp-knights-favicon.png"
+                width="30" height="30" class="d-inline-block align-top" alt="">
+            <span class="cl-white"> Axe'n osser</span>
+
+        </a>
+    </nav>
+
+
+    <div class="front-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500">
+                    <img class="main-laptop"
+                        src="https://img3.bgxcdn.com/thumb/large/oaupload/banggood/images/34/C6/c1b5b94a-bd55-4f06-bcc1-c654d8a5e6d4.png">
+                    <h1 class="main-text-2">are you ready?</h1>
+                    <h1 class="main-text">Start building you pc now</h1>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mx-auto mw-50d">
+        <div class="row" data-aos="fade-up">
+            <div class="col-md-6 box">
+                <div class="pt-4">
+                    <p class="heading-assemble">Motherboard</p>
+                    <div class="dropdown h-100 d-inline-block">
+                        <button class="btn btn-sm btn-outline-dark dropdown-toggle d-inline-block disabled"
+                            type="button" id="motherboardD" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Choose
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="motherboardD">
+                            <motherboard></motherboard>
+                        </div>
+                    </div>
+                    <p class="mt-1 cPointer">
+                        <span id="nomM" onmouseover="hoverOnText(this)" onmouseout="noHoverOnText(this)">Choose your
+                            motherboard...</span> <span id="preM"></span>
+                        <div class="mostraInfo"><img width="200px" src="">
+                        </div>
+                    </p>
+                    <img src="https://cdn-reichelt.de/bilder/web/xxl_ws/E200/ASUS_90MB1160_02.png" class="imgbox"
+                        width="100%">
+                </div>
+            </div>
+            <div class="col-md-6 box">
+                <div class="pt-4">
+                    <p class="heading-assemble">Videocard</p>
+                    <div class="dropdown h-100 d-inline-block">
+                        <button class="btn btn-sm btn-outline-dark dropdown-toggle d-inline-block disabled"
+                            type="button" id="gpuD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Choose
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="gpuD">
+                            <gpu></gpu>
+                        </div>
+                    </div>
+                    <p class="mt-1 cPointer ">
+                        <span id="nomG" onmouseover="hoverOnText(this)" onmouseout="noHoverOnText(this)">Choose your
+                            gpu...</span> <span id="preG"></span>
+                        <div class="mostraInfo"><img width="200px" src="">
+                        </div>
+                    </p>
+                    <img src="https://verzaton.com.ph/wp-content/uploads/2019/07/product_3_20180919181116_5ba220c4539b4.png"
+                        class="imgbox2" width="100%" style="transform: rotateZ(315deg);">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4" data-aos="fade-up">
+            <div class="col-md-6 box">
+                <div class="pt-4">
+                    <p class="heading-assemble">RAM modules</p>
+                    <div class="dropdown h-100 d-inline-block">
+                        <button class="btn btn-sm btn-outline-dark dropdown-toggle d-inline-block disabled"
+                            type="button" id="ramD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Choose
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="ramD">
+                            <ram></ram>
+                        </div>
+                    </div>
+                    <p class="mt-1 cPointer">
+                        <span id="nomR" onmouseover="hoverOnText(this)" onmouseout="noHoverOnText(this)">Choose your
+                            RAM...</span> <span id="preR"></span>
+                        <div class="mostraInfo"><img width="200px" src="">
+                        </div>
+                    </p>
+                    <img src="https://knightric.com/wp-content/uploads/2018/01/Vengeance_RGB_09.png" width="90%">
+                </div>
+            </div>
+            <div class="col-md-6 box">
+                <div class="pt-4">
+                    <p class="heading-assemble">CPU</p>
+                    <div class="dropdown h-100 d-inline-block">
+                        <button class="btn btn-sm btn-outline-dark dropdown-toggle d-inline-block disabled"
+                            type="button" id="cpuD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Choose
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="cpuD">
+                            <cpu></cpu>
+                        </div>
+                    </div>
+                    <p class="mt-1 cPointer">
+                        <span id="nomC" onmouseover="hoverOnText(this)" onmouseout="noHoverOnText(this)">Choose your
+                            cpu...</span> <span id="preC"></span>
+                        <div class="mostraInfo"><img width="200px" src="">
+                        </div>
+                    </p>
+                    <img src="https://www.cclonline.com/images/avante/11406_TR_PIB_03_0030_4K_alpha.png?width=530&height=400&scale=canvas"
+                        style="margin-top: 20px" width="80%">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4" data-aos="fade-up">
+            <div class="col-md-6 box">
+                <div class="pt-4">
+                    <p class="heading-assemble">Case</p>
+                    <div class="dropdown h-100 d-inline-block">
+                        <button class="btn btn-sm btn-outline-dark dropdown-toggle d-inline-block disabled"
+                            type="button" id="caseD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Choose
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby=caseD">
+                            <case></case>
+                        </div>
+                    </div>
+                    <p class="mt-1 cPointer">
+                        <span id="nomCa" onmouseover="hoverOnText(this)" onmouseout="noHoverOnText(this)">Choose your
+                            case...</span> <span id="preCa"></span>
+                        <div class="mostraInfo"><img width="200px" src="">
+                        </div>
+                    </p>
+                    <img src="https://cwsmgmt.corsair.com/pdp/vengeance-pc/5185/images/vengeance_5185_specs.png"
+                        width="80%">
+                </div>
+            </div>
+            <div class="col-md-6 box">
+                <div class="pt-4">
+                    <p class="heading-assemble">Solid-state drive</p>
+                    <div class="dropdown h-100 d-inline-block">
+                        <button class="btn btn-sm btn-outline-dark dropdown-toggle d-inline-block disabled"
+                            type="button" id="ssdD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Choose
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="ssdD">
+                            <ssd></ssd>
+                        </div>
+                    </div>
+                    <p class="mt-1 cPointer">
+                        <span id="nomS" onmouseover="hoverOnText(this)" onmouseout="noHoverOnText(this)">Choose your
+                            ssd...</span> <span id="preS"></span>
+                        <div class="mostraInfo"><img width="200px" src="">
+                        </div>
+                    </p>
+                    <img src="https://images.samsung.com/is/image/samsung/it-860-qvo-sata-3-2-5-ssd-mz-76q1t0bw-frontblack-132831896?$L2-Thumbnail$"
+                        width="80%">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4" data-aos="fade-up">
+            <div class="col-md-6 box">
+                <div class="pt-4">
+                    <p class="heading-assemble">Hard disk drive</p>
+                    <div class="dropdown h-100 d-inline-block">
+                        <button class="btn btn-sm btn-outline-dark dropdown-toggle d-inline-block disabled"
+                            type="button" id="hddD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Choose
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="hddD">
+                            <hdd></hdd>
+                        </div>
+                    </div>
+                    <p class="mt-1 cPointer">
+                        <span id="nomH" onmouseover="hoverOnText(this)" onmouseout="noHoverOnText(this)">Choose your
+                            hdd...</span> <span id="preH"></span>
+                        <div class="mostraInfo"><img width="200px" src="">
+                        </div>
+                    </p>
+                    <img src="https://www.stormcomputers.com.au/wp-content/uploads/2018/09/firecuda.png" width="100%"
+                        style="pointer-events: none;margin-top: -80px; transform: rotateZ(90deg);">
+                </div>
+            </div>
+            <div class="col-md-6 box">
+                <div class="pt-4">
+                    <p class="heading-assemble">Power supply unit</p>
+                    <div class="dropdown h-100 d-inline-block">
+                        <button class="btn btn-sm btn-outline-dark dropdown-toggle d-inline-block disabled"
+                            type="button" id="psuD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Choose
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="psuD">
+                            <psu></psu>
+                        </div>
+                    </div>
+                    <p class="mt-1 cPointer">
+                        <span id="nomP" onmouseover="hoverOnText(this)" onmouseout="noHoverOnText(this)">Choose your
+                            psu...</span> <span id="preP"></span>
+                        <div class="mostraInfo"><img width="200px" src="">
+                        </div>
+                    </p>
+                    <img src="https://cdn.shopify.com/s/files/1/0013/8461/1951/products/CP-9020061-EU-Gallery-CX750M-003_1200x1200.png?v=1540211662"
+                        style="margin-top: -120px; margin-left: 60px; pointer-events: none;" width="80%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="foot" class="foot-total fixed-bottom">
+        <div class="container-fluid my-auto">
+            <div class="row">
+                <div class="col-sm-10">
+                    <span class="danger" id="dagH"></span>
+                    <span class="error" id="errH"></span>
+                </div>
+                <div class="col-sm-2 px-0" style="font-size: 31px; font-weight: 300;">
+                    Totale: <span id="totale"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script>
+        AOS.init();
+
+        window.onload = function () {
+            let mlist = "";
+            let clist = "";
+            let rlist = "";
+            let hlist = "";
+            let slist = "";
+            let glist = "";
+            let calist = "";
+            let plist = "";
+
+            for (let i = 0; i < getListMotherboard().length; i++) {
+                mlist = mlist + '<span class="dropdown-item lM" numM="' + i + '">' + getMotherboard(i).name + '</span>'
+            }
+            $("motherboard").append(mlist);
+
+            for (let i = 0; i < getListCpu().length; i++) {
+                clist = clist + '<span class="dropdown-item lC" numM="' + i + '">' + getCpu(i).name + '</span>'
+            }
+            $("cpu").append(clist);
+
+            for (let i = 0; i < getListGpu().length; i++) {
+                glist = glist + '<span class="dropdown-item lG" numM="' + i + '">' + getGpu(i).name + '</span>'
+            }
+            $("gpu").append(glist);
+
+            for (let i = 0; i < getListRam().length; i++) {
+                rlist = rlist + '<span class="dropdown-item lR" numM="' + i + '">' + getRam(i).name + '</span>'
+            }
+            $("ram").append(rlist);
+
+            for (let i = 0; i < getListHdd().length; i++) {
+                hlist = hlist + '<span class="dropdown-item lH" numM="' + i + '">' + getHdd(i).name + '</span>'
+            }
+            $("hdd").append(hlist);
+
+            for (let i = 0; i < getListCaseP().length; i++) {
+                calist = calist + '<span class="dropdown-item lCa" numM="' + i + '">' + getCaseP(i).name + '</span>'
+            }
+            $("case").append(calist);
+
+            for (let i = 0; i < getListSsd().length; i++) {
+                slist = slist + '<span class="dropdown-item lS" numM="' + i + '">' + getSsd(i).name + '</span>'
+            }
+            $("ssd").append(slist);
+
+            for (let i = 0; i < getListPsu().length; i++) {
+                plist = plist + '<span class="dropdown-item lP" numM="' + i + '">' + getPsu(i).name + '</span>'
+            }
+            $("psu").append(plist);
+        };
+
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".dropdown-toggle").removeClass("disabled");
+            }, 1200)
+
+            alert("JQuery is currently functioning");
+            //Per il select dalla lista
+            $(".lM").on("click", function () {
+                let temp = +($(this).attr("numM"));
+                setComponentMotherboard(listMotherboard[temp]);
+                $("#nomM").text(getComponentMotherboard().name);
+                $("#preM").text("  |  $" + getComponentMotherboard().price);
+                $("#totale").text("$" + updateTotal());
+                $(this).closest(".box").find(".mostraInfo").find("img").attr("src", getComponentMotherboard().image);
+                $(this).closest(".box").find(".mostraInfo").css("background", "white");
+                setHints();
+            });
+
+            $(".lC").on("click", function () {
+                let temp = +($(this).attr("numM"));
+                setComponentCpu(listCpu[temp]);
+                $("#nomC").text(getComponentCpu().name);
+                $("#preC").text("  |  $" + getComponentCpu().price);
+                $("#totale").text("$" + updateTotal());
+                $(this).closest(".box").find(".mostraInfo").find("img").attr("src", getComponentCpu().image);
+                $(this).closest(".box").find(".mostraInfo").css("background", "white");
+                setHints();
+            });
+
+            $(".lG").on("click", function () {
+                let temp = +($(this).attr("numM"));
+                setComponentGpu(listGpu[temp]);
+                $("#nomG").text(getComponentGpu().name);
+                $("#preG").text("  |  $" + getComponentGpu().price);
+                $("#totale").text("$" + updateTotal());
+                $(this).closest(".box").find(".mostraInfo").find("img").attr("src", getComponentGpu().image);
+                $(this).closest(".box").find(".mostraInfo").css("background", "white");
+                setHints();
+            });
+
+            $(".lCa").on("click", function () {
+                let temp = +($(this).attr("numM"));
+                setComponentCaseP(listCaseP[temp]);
+                $("#nomCa").text(getComponentCaseP().name);
+                $("#preCa").text("  |  $" + getComponentCaseP().price);
+                $("#totale").text("$" + updateTotal());
+                $(this).closest(".box").find(".mostraInfo").find("img").attr("src", getComponentCaseP().image);
+                $(this).closest(".box").find(".mostraInfo").css("background", "white");
+                setHints();
+            });
+
+            $(".lR").on("click", function () {
+                let temp = +($(this).attr("numM"));
+                setComponentRam(listRam[temp]);
+                $("#nomR").text(getComponentRam().name);
+                $("#preR").text("  |  $" + getComponentRam().price);
+                $("#totale").text("$" + updateTotal());
+                $(this).closest(".box").find(".mostraInfo").find("img").attr("src", getComponentRam().image);
+                $(this).closest(".box").find(".mostraInfo").css("background", "white");
+                setHints();
+            });
+
+            $(".lS").on("click", function () {
+                let temp = +($(this).attr("numM"));
+                setComponentSsd(listSsd[temp]);
+                $("#nomS").text(getComponentSsd().name);
+                $("#preS").text("  |  $" + getComponentSsd().price);
+                $("#totale").text("$" + updateTotal());
+                $(this).closest(".box").find(".mostraInfo").find("img").attr("src", getComponentSsd().image);
+                $(this).closest(".box").find(".mostraInfo").css("background", "white");
+                setHints();
+            });
+
+            $(".lH").on("click", function () {
+                let temp = +($(this).attr("numM"));
+                setComponentHdd(listHdd[temp]);
+                $("#nomH").text(getComponentHdd().name);
+                $("#preH").text("  |  $" + getComponentHdd().price);
+                $("#totale").text("$" + updateTotal());
+                $(this).closest(".box").find(".mostraInfo").find("img").attr("src", getComponentHdd().image);
+                $(this).closest(".box").find(".mostraInfo").css("background", "white");
+                setHints();
+            });
+
+            $(".lP").on("click", function () {
+                let temp = +($(this).attr("numM"));
+                setComponentPsu(listPsu[temp]);
+                $("#nomP").text(getComponentPsu().name);
+                $("#preP").text("  |  $" + getComponentPsu().price);
+                $("#totale").text("$" + updateTotal());
+                $(this).closest(".box").find(".mostraInfo").find("img").attr("src", getComponentPsu().image);
+                $(this).closest(".box").find(".mostraInfo").css({ "background": "white", "cursor": "pointer" });
+                setHints();
+            });
+        });
+
+
+        function hoverOnText(x) {
+            $(x).closest(".box").find(".mostraInfo").fadeIn("fast");
+        }
+
+        function noHoverOnText(x) {
+            $(x).closest(".box").find(".mostraInfo").fadeOut("fast");
+        }
+
+        function setHints() {
+            let x = outPutInc();
+            $("#errH").text(x[0]);
+            $("#dagH").text(x[1]);
+        }
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $("#foot").show();
+            } else {
+                $("#foot").fadeOut(300);
+            }
+        });
+    </script>
+</body>
+
+</html>
