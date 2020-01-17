@@ -20,6 +20,17 @@
 </head>
 
 <body data-spy="scroll">
+    <!-- <div style="position: absolute; width: 100%; height: 100%; background-color: white; z-index: 10000;"
+        id="loadScreen">
+        <div style="width: 100%; top: 40%; height: 100px; position: absolute;">
+            <div class="mx-auto" style="width: 200px;">
+                <img src="loading.gif" width="200px">
+            </div>
+        </div>
+    </div>
+    -->
+
+
     <nav class="navbar navbar-light bg-transparent">
         <a class="navbar-brand" href="#">
             <img src="http://s3-us-west-2.amazonaws.com/sportshub2-uploads-prod/files/sites/2142/2018/07/31200428/iccp-knights-favicon.png"
@@ -28,7 +39,6 @@
 
         </a>
     </nav>
-
 
     <div class="front-header">
         <div class="container">
@@ -266,7 +276,11 @@
     <script>
         AOS.init();
 
+
+
         window.onload = function () {
+
+
             let mlist = "";
             let clist = "";
             let rlist = "";
